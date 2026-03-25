@@ -1,0 +1,184 @@
+/* =====================================================
+   OctoFit Tracker – Design System
+   Primary:  #0a3d6b  (deep navy)
+   Accent:   #38b000  (fitness green)
+   Surface:  #e8f4fd  (light blue tint)
+   Heading:  #0a3d6b
+   Link:     #0d6efd
+===================================================== */
+
+/* ── Global ───────────────────────────────────────── */
+body {
+  background: linear-gradient(135deg, #e8f4fd 0%, #d0eaff 100%);
+  min-height: 100vh;
+  color: #1a2e40;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0a3d6b;
+  font-weight: 700;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* ── Navbar ───────────────────────────────────────── */
+.octofit-navbar {
+  background: linear-gradient(90deg, #0a3d6b 0%, #1565c0 100%) !important;
+  box-shadow: 0 2px 8px rgba(10, 61, 107, 0.40);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.octofit-navbar .navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff !important;
+  letter-spacing: 0.02em;
+}
+
+.octofit-navbar .navbar-brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #38b000;
+  margin-right: 10px;
+  box-shadow: 0 0 8px rgba(56, 176, 0, 0.55);
+}
+
+.octofit-navbar .nav-link {
+  color: rgba(255,255,255,0.85) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.octofit-navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff !important;
+}
+
+.octofit-navbar .nav-link.active {
+  background-color: #38b000 !important;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+/* ── Cards ────────────────────────────────────────── */
+.octofit-card {
+  border: none;
+  border-radius: 0.85rem;
+  box-shadow: 0 4px 16px rgba(10, 61, 107, 0.12);
+  overflow: hidden;
+}
+
+.octofit-card .card-header {
+  background: linear-gradient(90deg, #0a3d6b 0%, #1565c0 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 3px solid #38b000;
+}
+
+.octofit-card .card-footer {
+  background-color: #f0f7ff;
+  border-top: 1px solid #cce0f5;
+  color: #5a7a99;
+  font-size: 0.8rem;
+  padding: 0.5rem 1.25rem;
+}
+
+/* ── Tables ───────────────────────────────────────── */
+.octofit-table {
+  margin-bottom: 0;
+}
+
+.octofit-table thead tr {
+  background: linear-gradient(90deg, #0a3d6b 0%, #1565c0 100%);
+  color: #fff;
+}
+
+.octofit-table thead th {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.85rem 1rem;
+  border: none;
+  color: #fff;
+}
+
+.octofit-table tbody td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  color: #1a2e40;
+  border-color: #d8eaf8;
+}
+
+.octofit-table tbody tr:hover td {
+  background-color: #ddeeff;
+  color: #0a3d6b;
+}
+
+.octofit-table tbody tr:nth-child(even) {
+  background-color: #f4f9ff;
+}
+
+/* ── Buttons ──────────────────────────────────────── */
+.btn-octofit {
+  background: linear-gradient(135deg, #38b000, #2d8f00);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.4rem 1.1rem;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-octofit:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+/* ── Badges ───────────────────────────────────────── */
+.badge {
+  font-size: 0.78rem;
+  padding: 0.35em 0.65em;
+}
+
+/* ── Responsive table wrapper ─────────────────────── */
+.table-responsive {
+  border-radius: 0 0 0.85rem 0.85rem;
+  overflow: hidden;
+}
+
+/* ── Spinner ──────────────────────────────────────── */
+.spinner-border.text-primary {
+  color: #0a3d6b !important;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* ── Alert overrides ──────────────────────────────── */
+.alert-danger {
+  border-left: 4px solid #dc3545;
+  background-color: #fff5f5;
+}
+
+
